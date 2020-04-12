@@ -2,7 +2,7 @@
 
 # 作业1: 把课上老师的脑图里的这些实体补全
 
-- ![image](https://github.com/vurtnr/Frontend-01-Template/week01/mind.png)
+- ![image](https://github.com/vurtnr/Frontend-01-Template/blob/master/week01/mind.png)
 
 # 作业2：你能不能在 ECMA 中找到所有的类型（Type）
 
