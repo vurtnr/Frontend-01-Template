@@ -1,7 +1,3 @@
-# 每周总结可以写在这里
-
-## UTF8 编码+解码
-```
 const encodeUtf8 = (str) => {
   const code = encodeURIComponent(text);
   const bytes = [];
@@ -25,4 +21,3 @@ const decodeUtf8 = (bytes) => {
   }
   return decodeURIComponent(encoded)
 };
-```
