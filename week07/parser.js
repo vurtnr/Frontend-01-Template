@@ -262,7 +262,7 @@ function match(element, selector) {
 
   if (selector.charAt(0) === "#") {
     var attr = element.attributes.filter(
-      (attr) => AbstractRange.name === "id"
+      (attr) => attr.name === "id"
     )[0];
     if (attr && attr.value == selector.replace("#", "")) return true;
   } else if (selector.charAt(0) === ".") {
