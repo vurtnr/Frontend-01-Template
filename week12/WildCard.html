@@ -32,7 +32,7 @@
             let reg = new RegExp(subPattern.replace(/\?/g, "[\\s\\S]"));
             reg.lastIndex = lastIndex
             reg.exec(source)
-            lastIndex = reg.lastIndex
+            lastIndex = reg.lastInde
         }
 
         for (let j = 0; j <= source.length - lastIndex && pattern[pattern.length - j] !== "*"; j--) {
