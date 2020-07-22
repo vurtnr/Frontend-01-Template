@@ -7,7 +7,6 @@ export class Timeline {
   }
   tick() {
     let t = Date.now() - this.startTime;
-    console.log(t);
     let animations = this.animations.filter((animation) => !animation.finished);
     for (let animation of this.animations) {
       let {
