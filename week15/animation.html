@@ -1,0 +1,42 @@
+<style>
+  #el {
+    width:100px;
+    height:100px;
+    background-color:skyblue;
+  }
+
+  #ek {
+    width:100px;
+    height:100px;
+    background-color:skyblue;
+  }
+</style>
+<div id="el"></div>
+<div id="ek"></div>
+<button id="pause-btn">pause</button>
+<button id="resume-btn">resume</button>
+<button id="ek-start-btn">pause</button>
+<script type="module">
+
+  import {Timeline,Animation,ColorAnimation} from './animation.js'
+  // import {cubicBezier} from './cubic_bezier.js'
+
+  let linear = t => t;
+  // let ease = cubicBezier(.25,.1,.25,1)
+
+  let el = document.getElementById("el")
+  let ek = document.getElementById("ek")
+  let tl = new Timeline;
+
+  tl.add(new Animation(el.style,"transform",v => `translateX(${v}px)`,0,200,5000,0,linear))
+
+  tl.start()
+
+
+  document.getElementById("pause-btn").addEventListener("click",() => tl.pause())
+  document.getElementById("resume-btn").addEventListener("click",() => tl.resume())
+  document.getElementById("ek-start-btn").addEventListener("click",() => {
+    tl.add(new ColorAnimation(el.style,"backgroundColor",{r:0,g:0,b:0,a:1},{r:255,g:0,b:0,a:1},5000,0,linear))
+  })
+
+</script>
