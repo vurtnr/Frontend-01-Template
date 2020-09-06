@@ -5,7 +5,7 @@ export const finishedOurFEClass = () => {
   let student = Object.create({});
   let status = ''
   let insist = learn 21 weeks ? true:false
-  const hours = more than 2hours || more than 3hours || absent
+  const hours = more than 5hours * 21weeks || absent
   let learnTimes = null
   if(loveJs || loveFrontEnd){
     learnTimes = Number.POSITIVE_INFINITY
@@ -21,7 +21,7 @@ export const finishedOurFEClass = () => {
     status = 'Find something you really enjoy doing and work hard for it'
   }
   student = {
-    status,insist,learnTimes
+    status,insist,learnTimes,note:'Is not about P levels，About own growth'
   }
   return student
 }
